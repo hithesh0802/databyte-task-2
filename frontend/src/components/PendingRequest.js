@@ -5,7 +5,7 @@ import '../styling/pendingreq.css';
 
 const PendingRequests = () => {
   const [pendingRequests, setPendingRequests] = useState([]);
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://databyte-task-2-1.onrender.com';
   const [curruser,setCurruser]= useState([]);
 
   const getPendingRequests = async () => {
