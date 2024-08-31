@@ -180,6 +180,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 150px;
 }
 
 .send-request-button:hover {
