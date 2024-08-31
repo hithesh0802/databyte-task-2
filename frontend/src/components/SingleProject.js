@@ -19,7 +19,7 @@ const SingleProject = ({ project }) => {
   });
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [newTask, setNewTask] = useState({ title: '', description: '', deadline: '', labels: [] ,progress: '0'});
-  const API_URL = 'https://databyte-task-2-1.onrender.com';
+  const API_URL = 'https://databyte-task-2.onrender.com';
 
   const handleInputChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
