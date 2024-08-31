@@ -6,7 +6,7 @@ import '../styling/search.css';
 const SearchUsers = ({ projectId }) => {
   const [username, setUsername] = useState('');
   const [searchResult, setSearchResult] = useState(null);
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://databyte-task-2-1.onrender.com';
   const [currUser, setCurrUser] = useState([]);
 
   useEffect(() => {
