@@ -324,7 +324,7 @@ const DashBoard = () => {
     const [filterLabel, setFilterLabel] = useState('');
     const [projectId, setProjectId] = useState('');
     const [projects, setProjects] = useState([]);
-    const socket = io('http://localhost:5000');
+    const socket = io('https://databyte-task-2.onrender.com');
 
     useEffect(() => {
         const getTasks = async () => {
