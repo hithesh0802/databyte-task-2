@@ -62,7 +62,7 @@ Socket.io (for real-time updates)
 Firebase (for push notifications)
 Render.com (for deployment)
 
-TO CHECK OUT A REAL TIME WORKING (DEPLOYMENT) OF THIS APP, DO VISIT: https://databyte-frontend.onrender.com
+TO CHECK OUT A REAL TIME WORKING (DEPLOYMENT) OF THIS APP, DO VISIT (NOT MOBILE-RESPONSIVE YET,you could check it out on a laptop): https://databyte-frontend.onrender.com
 
 Installation:
 Prerequisites
