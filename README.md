@@ -93,20 +93,34 @@ Create a .env file in the frontend directory and configure the following environ
 REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_FIREBASE_KEY=your_firebase_key
 
-Backend API Endpoints
-Authentication
+Few of the Backend API Endpoints used for:
+
+Authentication:
+
 POST /api/users/register - Register a new user
+
 POST /api/users/login - Login a user
-Projects
+
+Projects:
+
 POST /api/projects - Create a new project
+
 GET /api/projects - Get all projects
+
 DELETE /api/projects/:id - Delete a project
-Tasks
+
+Tasks:
+
 POST /api/tasks - Create a new task
+
 GET /api/tasks/:id - Get a specific task
+
 PUT /api/tasks/:id - Update a task
+
 DELETE /api/tasks/:id - Delete a task
-Frontend Setup
+
+Frontend Setup:
+
 Navigate to the frontend directory.
 
 Start the development server:
