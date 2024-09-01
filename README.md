@@ -44,10 +44,7 @@ Prerequisites
 Node.js
 npm or yarn
 MongoDB
-Clone the Repository
 
-git clone https://github.com/yourusername/taskify.git
-cd taskify
 Install Dependencies
 Backend
 
