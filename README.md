@@ -1,45 +1,70 @@
-Taskify Project
-Table of Contents
+Taskify Project- Databyte Task-2
+
+Table of Contents:
+
 Introduction
+
 Features
+
 Tech Stack
-Installation
+
+Installation and Deployed website
+
 Environment Variables
+
 Backend API Endpoints
+
 Frontend Setup
+
 Deployment
+
 Usage
+
 Contributing
-License
+
 Introduction
 Taskify is a task management application designed to help users create, manage, and collaborate on tasks and projects. The app supports real-time updates, notifications, project collaboration, and more. It is built using the MERN stack and is designed to be user-friendly and visually appealing.
 
-Features
+Features: 
+
 User Authentication
+
+Secure storage of details
+
 Create, Edit, and Delete Tasks
+
 Project Management with Collaboration Features
+
 Real-time Notifications
-Task Dependencies and Subtasks
-Analytics Dashboard
-Responsive Design
-Tech Stack
+
+Clean and pure css Design
+
+Tech Stack:
+
 Frontend:
 
 React.js
+Javascript
+Html
 Axios
 CSS (Custom Styling)
+
 Backend:
 
 Node.js
 Express.js
 MongoDB
 Mongoose
+
 Other Technologies:
 
 Socket.io (for real-time updates)
 Firebase (for push notifications)
 Render.com (for deployment)
-Installation
+
+TO CHECK OUT A REAL TIME WORKING (DEPLOYMENT) OF THIS APP, DO VISIT: https://databyte-frontend.onrender.com
+
+Installation:
 Prerequisites
 Node.js
 npm or yarn
@@ -58,11 +83,11 @@ npm install
 Environment Variables
 Create a .env file in the backend directory and configure the following environment variables:
 
-Copy code
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
 FRONTEND_URL=http://localhost:3000
+
 Create a .env file in the frontend directory and configure the following environment variables:
 
 REACT_APP_API_URL=http://localhost:5000/api
@@ -97,16 +122,19 @@ Create a new web service on Render.
 Connect your GitHub repository to Render.
 Set up environment variables as mentioned in the .env file.
 Deploy the service.
+
 Frontend
 The frontend is also deployed on Render.com:
 
 Create a new static site on Render.
 Connect your GitHub repository to Render.
 Build the frontend and deploy.
+
 Usage
 Register or log in to the application.
 Create or join projects.
 Manage tasks within your projects.
 Receive real-time notifications for task updates.
-Contributing
+
+Contributing to this Project:
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
