@@ -1,154 +1,166 @@
-Taskify Project- Databyte Task-2
+# ✅ Taskify – Databyte Task-2
 
-Table of Contents:
+Taskify is a full-stack task management application designed to help users create, manage, and collaborate on tasks and projects. Built using the **MERN stack**, it features real-time updates, push notifications, secure user authentication, and an intuitive user interface — making it perfect for both individuals and teams.
 
-Introduction
+🔗 **Live Demo**: [https://databyte-frontend.onrender.com](https://databyte-frontend.onrender.com)  
+📌 *(Note: Best viewed on desktop – not mobile responsive yet.)*
 
-Features
+---
 
-Tech Stack
+## 📚 Table of Contents
 
-Installation and Deployed website
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Environment Variables](#-environment-variables)
+- [Backend API Endpoints](#-backend-api-endpoints)
+- [Frontend Setup](#-frontend-setup)
+- [Deployment](#-deployment)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
 
-Environment Variables
+---
 
-Backend API Endpoints
+## ✨ Features
 
-Frontend Setup
+- 👤 User authentication (JWT-based)
+- 🔐 Secure data storage with MongoDB
+- 📌 Create, edit, delete tasks and manage projects
+- 👥 Project collaboration with friend requests
+- 🔔 Real-time push notifications using Firebase
+- 📊 Deadline tracking and progress visualization
+- 💬 Real-time updates (Socket.io)
+- 📱 Responsive (desktop-first) UI using clean CSS
+- 🔎 Task and project filtering + search
 
-Deployment
+---
 
-Usage
+## 🧱 Tech Stack
 
-Contributing
+### Frontend
+- React.js
+- JavaScript, HTML
+- Axios
+- CSS (custom styling)
 
-Introduction
-Taskify is a task management application designed to help users create, manage, and collaborate on tasks and projects. The app supports real-time updates, notifications, project collaboration, and more. It is built using the MERN stack and is designed to be user-friendly and visually appealing.
+### Backend
+- Node.js + Express.js
+- MongoDB + Mongoose
 
-Features: 
+### Others
+- Firebase (for push notifications)
+- Socket.io (for real-time updates)
+- Render (for deployment)
 
-User Authentication
+---
 
-Secure storage of details
+## ⚙️ Installation
 
-Create, Edit, and Delete Tasks
+### 📦 Prerequisites
 
-Project Management with Collaboration Features
+- Node.js
+- npm or yarn
+- MongoDB instance
 
-Real-time Notifications
+### 🔧 Install Dependencies
 
-Clean and pure css Design
-
-Tech Stack:
-
-Frontend:
-
-React.js
-Javascript
-Html
-Axios
-CSS (Custom Styling)
-
-Backend:
-
-Node.js
-Express.js
-MongoDB
-Mongoose
-
-Other Technologies:
-
-Socket.io (for real-time updates)
-Firebase (for push notifications)
-Render.com (for deployment)
-
-TO CHECK OUT A REAL TIME WORKING (DEPLOYMENT) OF THIS APP, DO VISIT (NOT MOBILE-RESPONSIVE YET,you could check it out on a laptop): https://databyte-frontend.onrender.com
-
-Installation:
-Prerequisites
-Node.js
-npm or yarn
-MongoDB
-
-Install Dependencies
-Backend
-
+#### Backend
+```bash
 cd backend
 npm install
+```
 
-Frontend
-
-cd ../frontend
+#### Frontend
+```bash
+cd frontend
 npm install
-Environment Variables
-Create a .env file in the backend directory and configure the following environment variables:
+```
 
+---
+
+## 🔐 Environment Variables
+
+### Backend `.env`
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
 FRONTEND_URL=http://localhost:3000
+```
 
-Create a .env file in the frontend directory and configure the following environment variables:
-
+### Frontend `.env`
+```env
 REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_FIREBASE_KEY=your_firebase_key
+```
 
-Few of the Backend API Endpoints used for:
+---
 
-Authentication:
+## 📡 Backend API Endpoints
 
-POST /api/users/register - Register a new user
+### 🔑 Authentication
+- `POST /api/users/register` – Register a new user  
+- `POST /api/users/login` – Login a user  
 
-POST /api/users/login - Login a user
+### 📁 Projects
+- `POST /api/projects` – Create a new project  
+- `GET /api/projects` – Get all projects  
+- `DELETE /api/projects/:id` – Delete a project  
 
-Projects:
+### ✅ Tasks
+- `POST /api/tasks` – Create a new task  
+- `GET /api/tasks/:id` – Get a specific task  
+- `PUT /api/tasks/:id` – Update a task  
+- `DELETE /api/tasks/:id` – Delete a task  
 
-POST /api/projects - Create a new project
+---
 
-GET /api/projects - Get all projects
+## 💻 Frontend Setup
 
-DELETE /api/projects/:id - Delete a project
-
-Tasks:
-
-POST /api/tasks - Create a new task
-
-GET /api/tasks/:id - Get a specific task
-
-PUT /api/tasks/:id - Update a task
-
-DELETE /api/tasks/:id - Delete a task
-
-Frontend Setup:
-
-Navigate to the frontend directory.
-
-Start the development server:
-
+```bash
+cd frontend
 npm start
+```
 
-The frontend should now be running on http://localhost:3000.
-Deployment
-Backend
-The backend is deployed on Render.com. You can deploy it by following these steps:
+The frontend will be available at: [http://localhost:3000](http://localhost:3000)
 
-Create a new web service on Render.
-Connect your GitHub repository to Render.
-Set up environment variables as mentioned in the .env file.
-Deploy the service.
+---
 
-Frontend
-The frontend is also deployed on Render.com:
+## 🚀 Deployment
 
-Create a new static site on Render.
-Connect your GitHub repository to Render.
-Build the frontend and deploy.
+### Backend (Render)
+1. Create a new web service on [Render](https://render.com)
+2. Connect your GitHub repository
+3. Set environment variables as listed in `.env`
+4. Deploy the service
 
-Usage
-Register or log in to the application.
-Create or join projects.
-Manage tasks within your projects.
-Receive real-time notifications for task updates.
+### Frontend (Render)
+1. Create a new static site on Render
+2. Connect your GitHub repository
+3. Set build command: `npm run build`
+4. Set output directory: `build`
+5. Deploy 🚀
 
-Contributing to this Project:
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+---
+
+## 🛠️ Usage
+
+1. Register or login to your Taskify account.
+2. Create new projects or join existing ones via friend requests.
+3. Add, update, and delete tasks.
+4. Track task completion via progress bars and timers.
+5. Get real-time push notifications for project updates.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to open an issue or submit a pull request with:
+- Bug fixes 🐛  
+- Feature suggestions ✨  
+- UI/UX improvements 🎨  
+
+---
+
+Let me know if you want this version saved as a file (`README.md`) or auto-linked to your GitHub project!
