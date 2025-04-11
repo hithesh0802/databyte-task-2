@@ -2,9 +2,6 @@
 
 Taskify is a full-stack task management application designed to help users create, manage, and collaborate on tasks and projects. Built using the **MERN stack**, it features real-time updates, push notifications, secure user authentication, and an intuitive user interface — making it perfect for both individuals and teams.
 
-🔗 **Live Demo**: [https://databyte-frontend.onrender.com](https://databyte-frontend.onrender.com)  
-📌 *(Note: Best viewed on desktop – not mobile responsive yet.)*
-
 ---
 
 ## 📚 Table of Contents
